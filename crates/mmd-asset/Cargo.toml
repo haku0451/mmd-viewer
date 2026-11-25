@@ -1,0 +1,13 @@
+[package]
+name = "mmd-asset"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+rust-version.workspace = true
+description = "Texture decoding for MMD models"
+
+[dependencies]
+image.workspace = true
+mmd-core.workspace = true
+thiserror.workspace = true
+tracing.workspace = true

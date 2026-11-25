@@ -1,0 +1,32 @@
+[package]
+name = "mmd-viewer"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+rust-version.workspace = true
+description = "MMD Viewer desktop application"
+
+[[bin]]
+name = "mmd-viewer"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+egui.workspace = true
+egui-wgpu.workspace = true
+egui-winit.workspace = true
+glam.workspace = true
+kira = { version = "0.12.6", default-features = false, features = ["cpal", "symphonia", "pcm", "mp3", "wav", "aac", "isomp4", "vorbis", "ogg"] }
+mmd-animation.workspace = true
+mmd-asset.workspace = true
+mmd-core.workspace = true
+mmd-editor.workspace = true
+mmd-format.workspace = true
+mmd-physics.workspace = true
+mmd-platform-windows.workspace = true
+mmd-renderer.workspace = true
+mmd-telemetry.workspace = true
+pollster.workspace = true
+tracing.workspace = true
+wgpu.workspace = true
+winit.workspace = true

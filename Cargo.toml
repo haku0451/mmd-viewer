@@ -1,0 +1,47 @@
+[workspace]
+resolver = "3"
+members = [
+    "apps/mmd-viewer",
+    "crates/mmd-animation",
+    "crates/mmd-asset",
+    "crates/mmd-core",
+    "crates/mmd-editor",
+    "crates/mmd-format",
+    "crates/mmd-physics",
+    "crates/mmd-platform-windows",
+    "crates/mmd-renderer",
+    "crates/mmd-telemetry",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+publish = false
+rust-version = "1.90"
+
+[workspace.dependencies]
+anyhow = "1"
+bytemuck = { version = "1", features = ["derive"] }
+encoding_rs = "0.8"
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "bmp", "tga"] }
+egui = { version = "0.37", features = ["default_fonts"] }
+egui-wgpu = "0.37"
+egui-winit = "0.37"
+glam = "0.30"
+mmd-animation = { path = "crates/mmd-animation" }
+mmd-asset = { path = "crates/mmd-asset" }
+mmd-core = { path = "crates/mmd-core" }
+mmd-format = { path = "crates/mmd-format" }
+mmd-editor = { path = "crates/mmd-editor" }
+mmd-physics = { path = "crates/mmd-physics" }
+mmd-platform-windows = { path = "crates/mmd-platform-windows" }
+mmd-renderer = { path = "crates/mmd-renderer" }
+mmd-telemetry = { path = "crates/mmd-telemetry" }
+pollster = "0.4"
+thiserror = "2"
+tracing = "0.1"
+tracing-appender = "0.2"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+wgpu = { version = "30" }
+winit = "0.30"
+windows-sys = "0.61"

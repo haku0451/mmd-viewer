@@ -1,0 +1,12 @@
+[package]
+name = "mmd-editor"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+rust-version.workspace = true
+description = "Editor camera and viewport input for MMD Viewer"
+
+[dependencies]
+glam.workspace = true
+mmd-core.workspace = true
+thiserror.workspace = true

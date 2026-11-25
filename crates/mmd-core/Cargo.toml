@@ -1,0 +1,11 @@
+[package]
+name = "mmd-core"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+rust-version.workspace = true
+description = "Internal data types and coordinate conventions for MMD Viewer"
+
+[dependencies]
+glam.workspace = true
+thiserror.workspace = true

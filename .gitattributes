@@ -1,0 +1,20 @@
+# Check text files out with LF on every platform. rustfmt.toml sets
+# newline_style = "Unix", and Windows runners (core.autocrlf=true) would
+# otherwise check out CRLF and fail `cargo fmt --check`.
+* text=auto eol=lf
+
+# Binary assets are never converted.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.bmp binary
+*.tga binary
+*.dds binary
+*.ico binary
+*.pmx binary
+*.pmd binary
+*.vmd binary
+*.vpd binary
+*.wav binary
+*.mp3 binary
+*.ogg binary

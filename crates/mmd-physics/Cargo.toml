@@ -1,0 +1,16 @@
+[package]
+name = "mmd-physics"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+rust-version.workspace = true
+description = "Bullet physics runtime for MMD rigid bodies"
+
+[dependencies]
+cxx = "1"
+glam.workspace = true
+mmd-core.workspace = true
+tracing.workspace = true
+
+[build-dependencies]
+cxx-build = "1"

@@ -1,0 +1,13 @@
+[package]
+name = "mmd-telemetry"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+rust-version.workspace = true
+description = "Structured logging setup for MMD Viewer"
+
+[dependencies]
+thiserror.workspace = true
+tracing.workspace = true
+tracing-appender.workspace = true
+tracing-subscriber.workspace = true

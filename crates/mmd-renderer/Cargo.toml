@@ -1,0 +1,19 @@
+[package]
+name = "mmd-renderer"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+rust-version.workspace = true
+description = "wgpu viewport rendering for MMD Viewer"
+
+[dependencies]
+bytemuck.workspace = true
+glam.workspace = true
+mmd-core.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+wgpu.workspace = true
+winit.workspace = true
+
+[dev-dependencies]
+naga = "30"

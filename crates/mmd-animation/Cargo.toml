@@ -1,0 +1,11 @@
+[package]
+name = "mmd-animation"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+rust-version.workspace = true
+description = "MMD animation evaluation"
+
+[dependencies]
+glam.workspace = true
+mmd-core.workspace = true

@@ -1,0 +1,13 @@
+[package]
+name = "mmd-format"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+rust-version.workspace = true
+description = "PMX, PMD, and VMD parsers for MMD Viewer"
+
+[dependencies]
+encoding_rs.workspace = true
+glam.workspace = true
+mmd-core.workspace = true
+thiserror.workspace = true
